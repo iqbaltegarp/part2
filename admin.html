@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andari Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Andari Panel</h1>
+        <nav>
+            <a href="admin.html">Tambah Produk</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Gass Upload</h2>
+        <form id="add-product-form" enctype="multipart/form-data">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <textarea id="product-desc" placeholder="Product Description" required></textarea>
+            <input type="number" id="product-price" placeholder="Product Price" required>
+            <input type="file" id="product-image" accept="image/*" required>
+            <button type="submit">Gass Upload</button>
+        </form>
+
+        <h2>Product List</h2>
+        <div id="admin-product-list"></div>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
